@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, p{
+  text-align: center;
+  color: #ff5050;
+  padding-top: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+li{
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  color: #ff5050;
+  background-color: #fff;
+  border: 3px solid #ff5050;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 50%;
+}
+
+img{
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  background: linear-gradient(to bottom left, #ff9966 0%, #ff5050 100%);
+  padding: 10px 35px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+div.fixed {
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+}
+
+#buCen{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#buCen button{
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#alvo, img{
+  cursor:url("img/cursor.png") 18 27, auto;
+}
+
+#alvo{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+#cenario{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  top: 5%;
+}
+
+#contagemAcertos{
+  margin-top: 30px;
+}
+
+#nome_jogador {
+  margin: auto;
+  border-radius: 5px;
+}
+
+.fixed {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius:10px;
+  width: 100%;
+  height: 50px;
+  color: #ff5050;
+}
+
+.fixed .btn, button {
+  background: linear-gradient(to bottom left, #ff9966 0%, #ff5050 100%);
+  margin-top: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.fixed label {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  color: #ff5050;
+}
+
+.fixed .nome{
+  margin-top: 30px;
+  display: block;
+  font-weight: bold;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ff5050;
+}

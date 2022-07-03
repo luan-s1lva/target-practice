@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tiro ao Alvo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <h1 style="color: #ff5050;">ACERTE O BUXINHO, TENHA PENA NÃO!</h1>  
+
+  <h2 id="cronometro" style="color: #ff5050;">Tempo: 00:00</h2>
+  
+  <div id="cenario">
+    <img onClick="onClick()" src="img/cenario.png" alt="Cenário">
+    <div id="alvo" onclick="aumentarPonto()">
+      <img src="img/alvo.png" alt="Alvo">
+    </div>
+  </div>
+
+  <p id="contagemAcertos">Acertos: <a id="acertos">0</a>/<a id="clicks">0</a> Pancadas</p>
+  
+  <div id="buCen">
+    <button onclick="iniciarTempo()">Iniciar Jogo</button>
+    <button onclick="pararTempo()">Finalizar Jogo</button>
+  </div>  
+
+  <div class="fixed">
+    <h2>Pontuação</h2>
+    <div class="nome">
+      <label for="nome_jogador">Digite o seu nome:</label>
+        <input type="text" name="nome_jogador" id="nome_jogador" placeholder="Ex.: Player1" required>
+    </div>
+    <input type="button" value="Enviar!" class="btn" onclick="criarElemento()">
+  </div>
+
+  <h3 style="color: #ff5050;">Histórico:</h3>
+  <ul id="historico_jogador"></ul>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
